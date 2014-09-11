@@ -1,0 +1,341 @@
+//properties of sidebar
+$titlebg: #9ea7b3;
+$titlesize: 24px;
+$height: 51px;
+$width: 227px;
+$font-color: #606569;
+$font-size: 18px;
+$sidebar-sort-by: "name";
+$index-sort-by: "name";
+$unvisible: none;
+$bodybg: #eeeded;
+@import "compass";
+@import "singularitygs";
+@include add-grid(12);
+@include add-gutter(20/65);
+@include add-gutter-style('split');
+
+body {
+    background: $bodybg;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    padding-left: 10px;
+    box-sizing: border-box;
+    background: white;
+    width: 1024px;
+    overflow: hidden;
+    margin: auto;
+}
+
+@import "sidebar/*.png";
+
+@include all-sidebar-sprites;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+
+.sidebar1 {
+
+   width:$width;
+    & + & {
+        margin-left: $width;
+    }
+}
+
+li {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 1px;
+    position: relative;
+    @at-root     .talent {
+        position: relative;
+        & > a::after {
+            content: ">";
+            margin-left: 50px;
+        }
+        ul {
+            display: none;
+            margin-top: 1px;
+        }
+        &:hover {
+            ul {
+                display: block;
+            }
+            .sidebar-talent {
+                -moz-transition: top 0s,background-position .2s ease-in-out 0s;
+                top: 5%;
+            }
+        }
+    }
+    &:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &:nth-child(n+3) {
+        .item:hover {
+            // border-style: solid;
+            // border-top-width: 2px;
+            // border-bottom-width: 2px;
+            background-color: #d9eef5;
+            .sidebar-agent {
+                background-position: 0 -14px;
+            }
+            .sidebar-appearence {
+                background-position: 0 -58px;
+            }
+            .sidebar-billboard {
+                background-position: 0 -111px;
+            }
+            .sidebar-filming {
+                background-position: 0 -177px;
+            }
+            .sidebar-new-user {
+                background-position: 0 -250px;
+            }
+            .sidebar-talent {
+                background-position: 0 -322px;
+            }
+            .index-Phone {
+                background-position: 0 -21px;
+            }
+            .index-Picture {
+                background-position: 0 -81px;
+            }
+            .index-Profile {
+                background-position: 0 -142px;
+            }
+            .index-Star {
+                background-position: 0 -216px;
+            }
+            .index-agent {
+                background-position: 0 -278px;
+            }
+            .index-video {
+                background-position: 0 -321px;
+            }
+        }
+    }
+    &.title {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        line-height: $height;
+        box-sizing: border-box;
+        text-align: left;
+        padding-left: 20px;
+        background: $titlebg;
+        font-size: $titlesize;
+        color: white;
+        font-weight: bold;
+        height: $height;
+        width: $width;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.item {
+    // &::-moz-selection{
+    //     background: red;
+    //     color:white;
+    // }
+    box-sizing: border-box;
+    padding-left: 62px;
+    display: block;
+    text-decoration: none;
+    height: $height;
+    width: $width;
+    background: #f2f5f7;
+    line-height: $height;
+    color: $font-color;
+    font-size: $font-size;
+    & span {
+        transition: all 0.2s ease-in-out 0s;
+    }
+    &_selected {
+        background: #42b0d8;
+        color: white;
+        .sidebar-new-user {
+            background-position: 0 -275px;
+        }
+        .index-Profile {
+            background-position: 0 -167px;
+        }
+    }
+    span {
+        left: 20px;
+        width: 25px;
+        position: absolute;
+    }
+}
+
+.sub-talent {
+    a {
+        span {
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background: #999999;
+            position: absolute;
+            top: 50%;
+            left: 40px;
+        }
+        padding-left: 70px;
+        &:hover {
+            span {
+                background: white;
+            }
+        }
+    }
+}
+
+.sidebar-agent {
+    height: 14px;
+    top: 35%;
+}
+
+.sidebar-appearence {
+    height: 16px;
+    top: 35%;
+}
+
+.sidebar-billboard {
+    height: 21px;
+    top: 30%;
+}
+
+.sidebar-filming {
+    height: 26px;
+    top: 25%;
+}
+
+.sidebar-new-user {
+    top: 28%;
+    height: 25px;
+}
+
+.sidebar-talent {
+    height: 22px;
+    top: 32%;
+}
+
+// sidebar of index page
+
+@import "index/*.png";
+
+@include all-index-sprites;
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Phone {
+    top: 31%;
+    height: 21px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Picture {
+    top: 36%;
+    height: 18px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Profile {
+    top: 29%;
+    height: 25px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Star {
+    top: 28%;
+    height: 23px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-agent {
+    top: 35%;
+    height: 14px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-video {
+    top: 40%;
+    height: 15px;
+}
+
+
+//view-resume
+
+.view-resume{
+  
+    height: 100px;
+    width: $width;
+    box-sizing: border-box;
+    
+    padding:25px 0;
+    div{
+
+  border-radius: 3px;
+ 
+  box-shadow: 1px 1.732px 0px 0px rgba(0, 0, 0, 0.2);
+ 
+
+        text-align: center;
+    line-height: 50px;
+    background:#42b0d8;
+    }
+    
+}
+
+//VIP
+.vip{
+    @extend li.title;
+}
+.join{
+
+  background-color: rgb(66, 176, 216);
+ 
+  width: $width;
+  height: 155px;
+  &-btn{
+
+  background-color: #ec6333;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+ 
+  width: 130px;
+  height: 40px;
+  
+}
+
+ 
+}
+
+.profile{
+
+    @include grid-span(9,4);
+    background: red;
+    overflow: hidden;
+    height:279px;
+    background:url("../img/bg.png");
+
+  border-radius: 3px;
+ 
+margin-bottom: 20px;
+
+
+}
+
+.billboard{
+@extend .profile;
+background: red;
+}
+
+.notification{
+@extend .profile;
+background: red;
+}
+

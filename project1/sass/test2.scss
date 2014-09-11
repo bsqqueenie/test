@@ -1,0 +1,34 @@
+@import "var/**/*";
+@import "singularitygs";
+@import "breakpoint";
+@import "animation";
+@import "compass";
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.box{
+	width: 500px;
+	
+	background: red;
+	overflow: hidden;
+	.left {
+		height: 500px;
+		width: 20%;
+		background: green;
+		float: left;
+	}
+	.right {
+		height: 500px;
+		margin-left: 20%;
+		li{
+			list-style: none;
+			background: purple;
+			margin-bottom: 5px;
+		}
+	}
+}

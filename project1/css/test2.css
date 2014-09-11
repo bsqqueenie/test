@@ -1,0 +1,30 @@
+/* line 8, ../sass/test2.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/test2.scss */
+.box {
+  width: 500px;
+  background: red;
+  overflow: hidden;
+}
+/* line 19, ../sass/test2.scss */
+.box .left {
+  height: 500px;
+  width: 20%;
+  background: green;
+  float: left;
+}
+/* line 25, ../sass/test2.scss */
+.box .right {
+  height: 500px;
+  margin-left: 20%;
+}
+/* line 28, ../sass/test2.scss */
+.box .right li {
+  list-style: none;
+  background: purple;
+  margin-bottom: 5px;
+}

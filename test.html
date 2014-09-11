@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试页</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/responsiveImg.js"></script>
+	<!-- <script>
+	//jQuery实现下拉一段时间后浮现出某个元素
+	
+		$(document).ready(function(){
+				//topMain导航的div距离最顶部的高度
+	                var topMain=$(".header").height()+80;
+	
+	                var nav=$(".header");
+				//当下拉高度超过topMain的时候，添加用jqueryaddClass添加属性浮动全宽
+	                $(window).scroll(function(){
+	                    if ($(window).scrollTop()>topMain){
+	                        nav.addClass("nav_scroll");
+	                    }
+	                    else
+	                    {
+	                        nav.removeClass("nav_scroll");
+	                    }
+	                });
+	     
+	        })
+	</script> -->
+<!--  <script>
+//jQuery实现下滑时隐藏nav，上滑时显示nav 注意设定setTimeout 不然没有效果
+	$(document).ready(function(){
+		var p=0,t=0;
+		$(window).scroll(function(e){
+		 p=$(this).scrollTop();
+
+		 if(t<p){
+		 	$(".header").removeClass("nav_scroll");
+		 }
+		 else{
+		 	$(".header").addClass("nav_scroll");
+		 }
+
+		 //判断完毕一次之后就把p的置付给t，进行前一次与后一次的比较
+		 setTimeout(function(){t=p},0);
+		 //这种方式也可以
+		 //t=p;
+		});		
+	});
+</script>  -->
+<!-- <script>
+	$(document).ready(function(){
+		alert(1)
+
+setTimeout(function(){alert('3')},2000);
+
+alert(2)
+	})
+</script> -->
+
+</head>
+<body>
+	<div class="header"></div>
+
+	<div class="box">
+		
+			<img src="img/crop.png" alt="">
+			<img src="img/crop2.png" alt="">
+			<img src="img/crop3.png" alt="">
+		<div class="clear"></div>
+	</div>
+	<div class="main">
+		<div class="contentbox">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+	</div>
+
+  	
+	
+	<footer></footer>
+</body>
+
+	<!-- <script>
+	var width=$(window).width();
+var height=$(window).height();
+var h1=(width/1800)*818;
+var h2=818/(1800/width);
+
+if(width>=1800){
+	 $(".box").css("height",h2)
+}else{
+	$(".box").css("height",h1)
+}
+
+
+
+
+
+
+
+$(window).resize(function() {  
+width=$(window).width();
+h1=(width/1800)*818;
+h2=818/(1800/width);
+height=$(window).height();
+
+  if(width>=1800){
+	 $(".box").css("height",h2)
+}else{
+	$(".box").css("height",h1)
+}
+
+
+
+});
+</script>
+-->
+</html>

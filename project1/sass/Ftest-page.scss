@@ -1,0 +1,290 @@
+@import 'compass';
+@import 'var/**/*';
+@import "animation";
+$max-fontsize: 24px;
+$mid-fontsize: 20px;
+$min-fontsize: 18px;
+$content-fontsize: 16px;
+$color: #555555;
+$allwidth: 100%;
+$allheight: 100%;
+$d-color: #171744;
+$whight: white;
+$tri-width: 50px;
+
+
+
+// @import "social/*.png";
+// @include  social-sprites(ins);
+
+
+
+
+/* ----Defined mixin---- */
+
+
+@mixin border-radius($radius: 20px) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin triangle($width, $dir, $color) {
+    height: 0;
+    width: 0;
+    @if $dir == up {
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-bottom: $width solid $color;
+    }
+    @else if $dir == down {
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-top: $width solid $color;
+    }
+    @else if $dir == left {
+        border-bottom: $width solid transparent;
+        border-right: $width solid $color;
+        border-top: $width solid transparent;
+    }
+    @else if $dir == right {
+        border-bottom: $width solid transparent;
+        border-left: $width solid $color;
+        border-top: $width solid transparent;
+    }
+}
+
+@mixin circle($width, $border-color) {
+    height: $width;
+    width: $width;
+    -moz-border-radius: $width / 2;
+    -o-border-radius: $width / 2;
+    -webkit-border-radius: $width / 2;
+    border-radius: $width / 2;
+    border: 2px solid $border-color;
+}
+
+@mixin clearfix {
+    & {
+        *zoom: 1;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// $icons: ins, linkedin, tw, wechat, whatsapp;
+
+// @each $socail in $icons {
+//     .#{$socail} {
+//         background: url("../img/#{$socail}.png") no-repeat center center;
+//     }
+// }
+
+/* -------Reset the page------ */
+@include reset;
+
+body, html {
+    width: 100%;
+    min-height: 100%;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+/*----- HEADER------ */
+header {
+    background: #171744;
+    width: $allwidth;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/*----- NAV------ */
+nav {
+    overflow: hidden;
+    background: $d-color;
+    width: $allwidth;
+    color: #fff;
+    ul li {
+        float: left;
+        margin-right: 5%;
+        list-style: none;
+        a {
+            display: block;
+            color: $whight;
+            text-align: center;
+            line-height: 50px;
+            padding: 0 25px;
+            &:hover {
+                background: #fff;
+                color: $color;
+            }
+        }
+    }
+    ul li:first-child {
+        margin-left: 5%;
+    }
+}
+
+/*-----Mainbox------ */
+
+.mainbox {
+
+    overflow: hidden;
+    width: $allwidth;
+    background: #E2E2E2;
+    padding: 5% 10%;
+    position: relative;
+    box-sizing:border-box;
+    .social{
+        background: #02261A;
+    }
+    .social li {
+        float: left;
+        a {
+            display: block;
+            width: 90px;
+            height: 90px;
+        }
+    }
+    .circle {
+        @include circle($tri-width * 2, red);
+        background: pink;
+    }
+    .triangle {
+        @include triangle($tri-width, up, red);
+    }
+    .triangle2 {
+        @include triangle($tri-width, down, red);
+    }
+    .triangle3 {
+        @include triangle($tri-width, left, red);
+    }
+    .triangle4 {
+        @include triangle($tri-width, right, red);
+    }
+    .part1 {
+        @include border-radius;
+        clear: both;
+    }
+}
+
+/*-----Contentbox------ */
+
+.contentbox {
+    overflow: hidden;
+    border: 1px solid #25004A;
+    color: $color;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: $content-fontsize;
+    a {
+        text-decoration: none;
+        font-style: italic;
+        color: #F10E52;
+    }
+    .highlight {
+        display: block;
+        overflow: hidden;
+        background: #fff;
+        color: #666;
+        text-align: left;
+        padding: 10px;
+        line-height: 20px;
+    }
+    p {
+        padding-top: 10px;
+    }
+}
+
+/*-----Set the bg-color of each part------ */
+
+@function h3color($background, $h3color) {
+    @if lightness($background) < 50% {
+        @return lighten($h3color, 30%);
+    }
+    @else {
+        @return darken($h3color, 30%);
+    }
+}
+
+@each $class, $background ,$h3color in part1 #25C7F5 #008080, part2 #25C7F5 + 20 #008080, part3 #25C7F5 + 40 #008080, part4 #25C7F5 + 60 #008080 {
+    // $class: nth($property, 1);
+    // $background: nth($property, 2);
+    // $h3color:nth($property, 3);
+    .#{$class} {
+        background: rgba($background, 0.5);
+
+          h3 {
+            color: h3color($background,$h3color)
+    }
+}
+
+    }
+
+/*-----Set the  text-decotation of each part------ */
+
+// @for $i from 1 through 4 {
+//  .part#{$i}{
+//text-decoration: underline;
+//  }
+//
+//}
+// $i: 1;
+// $bgcolor: black;
+// $test-color: white;
+// $test-color2: #ff0080;
+
+// @while $i < 5 {
+//     .part#{$i} {
+//         background: $bgcolor;
+//         text-decoration: underline;
+//         h3 {
+//             color: h3color($bgcolor, $test-color2);
+//         }
+//         p,article{
+//             color:h3color($bgcolor, $test-color);
+//         }
+//     }
+//     $i : $i + 1 !global;
+//     $bgcolor : lighten($bgcolor, 10%) !global;
+// }
+
+
+// .part1{
+
+//  @include background-image
+//  (linear-gradient(120deg,rgba( #2ac363,0.4),rgba( #cd8c14,0.4),rgba( #9c4cc2,0.4)));
+//  }
+
+#footer{
+    height: 100px;
+    width: 100%;
+    background: black;
+ 
+
+
+}
+
+//new feature of Sass 3.4.0----which is really important!
+#{selector-nest(".haha,.hehe",".dada")}{
+        color:red;
+}
+
+#{selector-append(".haha,.hehe","-dada")}{
+        color:red;
+}
+
+#{selector-unify(".haha,.hehe",".dada")}{
+        color:red;
+}
+

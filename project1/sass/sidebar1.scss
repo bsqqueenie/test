@@ -1,0 +1,324 @@
+//properties of sidebar
+$titlebg: #9ea7b3;
+$titlesize: 24px;
+$height: 51px;
+$width: 227px;
+$font-color: #606569;
+$font-size: 18px;
+$sidebar-sort-by : 'name';
+$index-sort-by : 'name';
+$unvisible:none;
+
+.hidden{
+    display: none;
+}
+
+
+
+@import "sidebar/*.png";
+
+@include all-sidebar-sprites;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+.sidebar1{
+
+    float:left;
+    & + &{
+        margin-left: $width;
+    }
+}
+li {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 1px;
+    position: relative;
+@at-root .talent{
+    position: relative;
+&>a::after{
+    content:">";
+    margin-left: 50px;
+
+    
+}
+    ul{
+        display: none;
+        margin-top: 1px;
+    }
+    &:hover{
+     
+        ul{
+            display: block;
+ 
+
+        }
+        .sidebar-talent {
+            -moz-transition: top 0s,background-position .2s ease-in-out 0s;
+     top: 5%;
+}
+    }
+}
+    &:last-child{
+
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        
+    }
+
+            &:nth-child(n+3){.item:hover {
+            // border-style: solid;
+            
+            // border-top-width: 2px;
+            // border-bottom-width: 2px;
+          
+            background-color: #d9eef5;
+        
+.sidebar-agent {
+  background-position: 0 -14px;
+}
+.sidebar-appearence {
+  background-position: 0 -58px;
+}
+.sidebar-billboard {
+  background-position: 0 -111px;
+}
+.sidebar-filming {
+  background-position: 0 -177px;
+}
+
+.sidebar-new-user {
+  background-position: 0 -250px;
+}
+.sidebar-talent {
+  background-position: 0 -322px;
+}
+
+.index-Phone {
+  background-position: 0 -21px;
+}
+.index-Picture {
+  background-position: 0 -81px;
+}
+.index-Profile {
+  background-position: 0 -142px;
+}
+
+.index-Star {
+  background-position: 0 -216px;
+}
+.index-agent {
+  background-position: 0 -278px;
+}
+.index-video {
+  background-position: 0 -321px;
+}
+
+        }
+
+            }
+    &.title {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        line-height: $height;
+        box-sizing: border-box;
+        text-align: left;
+        padding-left: 20px;
+        background: $titlebg;
+        font-size: $titlesize;
+        color: white;
+        font-weight: bold;
+        height: $height;
+        width: $width;
+
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+ 
+
+
+    }
+    .item {
+        // &::-moz-selection{
+        //     background: red;
+        //     color:white;
+        // }
+        box-sizing: border-box;
+        padding-left: 62px;
+        display: block;
+        text-decoration: none;
+        height: $height;
+        width: $width;
+        background: #f2f5f7;
+        line-height: $height;
+        color: $font-color;
+        font-size: $font-size;
+ 
+        & span{
+        	transition: all 0.2s ease-in-out 0s;
+        }
+
+       
+
+        &_selected {
+            background: #42b0d8;
+            color: white;
+
+            .sidebar-new-user {
+               background-position: 0 -275px;
+            }
+            .index-Profile{
+                  background-position: 0 -167px;
+            }
+        }
+        
+        span {
+            left: 20px;
+           
+            width: 25px;
+            position: absolute;
+        }
+    }
+    .sub-talent {
+        a{
+               span {
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background: #999999;
+            position: absolute;
+            top: 50%;
+            left: 40px;
+        }
+        padding-left: 70px;
+     
+        &:hover {
+
+            span {
+                background: white;
+            }
+        }
+     
+    }}
+
+
+.sidebar-agent {
+    height: 14px;
+     top: 35%;
+}
+
+.sidebar-appearence {
+    height: 16px;
+    top: 35%;
+}
+
+.sidebar-billboard {
+    height: 21px;
+     top: 30%;
+}
+
+.sidebar-filming {
+    height: 26px;
+     top: 25%;
+
+}
+
+.sidebar-new-user {
+     top: 28%;
+    height: 25px;
+}
+
+.sidebar-talent {
+    height: 22px;
+     top: 32%;
+}
+
+// sidebar of index page
+
+@import "index/*.png";
+@include all-index-sprites;
+
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Phone {
+    top:31%;
+height: 21px;
+}
+
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Picture {
+    top:36%;
+height: 18px;
+}
+
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Profile {
+    top:29%;
+height: 25px;
+}
+
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Star {
+    top:28%;
+height: 23px;
+}
+
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-agent {
+    top:35%;
+height: 14px;
+}
+
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-video {
+  top:40%;
+height: 15px;
+}
+
+
+//3D-rotate very important
+
+.card-container{
+    -moz-perspective:700;
+    .card{
+        position: relative;
+        text-align: center;
+        line-height: 500px;
+        margin:20px;
+        width: 500px;
+        height: 500px;
+        
+        -moz-transform-style: preserve-3d;
+        transition:all .6s ease;
+        .front,.back{
+            color:white;
+            position: absolute;
+            text-align: center;
+        line-height: 500px;
+        width: 500px;
+        height: 500px;
+background: red;
+//important statement
+backface-visibility: hidden;
+        }
+        .back{
+            //important statement
+            -moz-transform: rotateY(180deg);  
+        }
+      &:hover{
+          -moz-transform: rotateY(180deg);   
+      } 
+    }
+}

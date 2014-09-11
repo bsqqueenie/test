@@ -1,0 +1,520 @@
+/* line 18, ../sass/sidebar.scss */
+body {
+  background: #eeeded;
+}
+
+/* line 22, ../sass/sidebar.scss */
+.hidden {
+  display: none;
+}
+
+/* line 26, ../sass/sidebar.scss */
+.container {
+  padding-left: 10px;
+  box-sizing: border-box;
+  background: white;
+  width: 1024px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* line 184, sidebar/*.png */
+.sidebar-sprite, .sidebar-agent-1, .sidebar-agent-2, .sidebar-agent, .sidebar-appearence-1, .sidebar-appearence-2, .sidebar-appearence, .sidebar-billboard-1, .sidebar-billboard-2, .sidebar-billboard, .sidebar-filming-1, .sidebar-filming-2, .sidebar-filming, .sidebar-new-user-1, .sidebar-new-user-2, .sidebar-new-user, .sidebar-talent-1, .sidebar-talent-2, .sidebar-talent {
+  background-image: url('../img/sidebar-sb351bd7b29.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-agent-1 {
+  background-position: 0 -14px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-agent-2 {
+  background-position: 0 -28px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-agent {
+  background-position: 0 0;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-appearence-1 {
+  background-position: 0 -58px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-appearence-2 {
+  background-position: 0 -74px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-appearence {
+  background-position: 0 -42px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-billboard-1 {
+  background-position: 0 -111px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-billboard-2 {
+  background-position: 0 -132px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-billboard {
+  background-position: 0 -90px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-filming-1 {
+  background-position: 0 -177px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-filming-2 {
+  background-position: 0 -201px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-filming {
+  background-position: 0 -153px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-new-user-1 {
+  background-position: 0 -250px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-new-user-2 {
+  background-position: 0 -275px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-new-user {
+  background-position: 0 -225px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-talent-1 {
+  background-position: 0 -322px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-talent-2 {
+  background-position: 0 -344px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.sidebar-talent {
+  background-position: 0 -300px;
+}
+
+/* line 39, ../sass/sidebar.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+
+/* line 45, ../sass/sidebar.scss */
+.sidebar1 {
+  width: 227px;
+}
+/* line 48, ../sass/sidebar.scss */
+.sidebar1 + .sidebar1 {
+  margin-left: 227px;
+}
+
+/* line 53, ../sass/sidebar.scss */
+li {
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 1px;
+  position: relative;
+}
+/* line 58, ../sass/sidebar.scss */
+.talent {
+  position: relative;
+}
+/* line 60, ../sass/sidebar.scss */
+.talent > a::after {
+  content: ">";
+  margin-left: 50px;
+}
+/* line 64, ../sass/sidebar.scss */
+.talent ul {
+  display: none;
+  margin-top: 1px;
+}
+/* line 69, ../sass/sidebar.scss */
+.talent:hover ul {
+  display: block;
+}
+/* line 72, ../sass/sidebar.scss */
+.talent:hover .sidebar-talent {
+  -moz-transition: top 0s,background-position .2s ease-in-out 0s;
+  top: 5%;
+}
+/* line 78, ../sass/sidebar.scss */
+li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 83, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover {
+  background-color: #d9eef5;
+}
+/* line 88, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-agent {
+  background-position: 0 -14px;
+}
+/* line 91, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-appearence {
+  background-position: 0 -58px;
+}
+/* line 94, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-billboard {
+  background-position: 0 -111px;
+}
+/* line 97, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-filming {
+  background-position: 0 -177px;
+}
+/* line 100, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-new-user {
+  background-position: 0 -250px;
+}
+/* line 103, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .sidebar-talent {
+  background-position: 0 -322px;
+}
+/* line 106, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-Phone {
+  background-position: 0 -21px;
+}
+/* line 109, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-Picture {
+  background-position: 0 -81px;
+}
+/* line 112, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-Profile {
+  background-position: 0 -142px;
+}
+/* line 115, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-Star {
+  background-position: 0 -216px;
+}
+/* line 118, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-agent {
+  background-position: 0 -278px;
+}
+/* line 121, ../sass/sidebar.scss */
+li:nth-child(n+3) .item:hover .index-video {
+  background-position: 0 -321px;
+}
+/* line 126, ../sass/sidebar.scss */
+li.title, .vip {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  line-height: 51px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 20px;
+  background: #9ea7b3;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  height: 51px;
+  width: 227px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 143, ../sass/sidebar.scss */
+.item {
+  box-sizing: border-box;
+  padding-left: 62px;
+  display: block;
+  text-decoration: none;
+  height: 51px;
+  width: 227px;
+  background: #f2f5f7;
+  line-height: 51px;
+  color: #606569;
+  font-size: 18px;
+}
+/* line 158, ../sass/sidebar.scss */
+.item span {
+  transition: all 0.2s ease-in-out 0s;
+}
+/* line 161, ../sass/sidebar.scss */
+.item_selected {
+  background: #42b0d8;
+  color: white;
+}
+/* line 164, ../sass/sidebar.scss */
+.item_selected .sidebar-new-user {
+  background-position: 0 -275px;
+}
+/* line 167, ../sass/sidebar.scss */
+.item_selected .index-Profile {
+  background-position: 0 -167px;
+}
+/* line 171, ../sass/sidebar.scss */
+.item span {
+  left: 20px;
+  width: 25px;
+  position: absolute;
+}
+
+/* line 179, ../sass/sidebar.scss */
+.sub-talent a {
+  padding-left: 70px;
+}
+/* line 180, ../sass/sidebar.scss */
+.sub-talent a span {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #999999;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+}
+/* line 191, ../sass/sidebar.scss */
+.sub-talent a:hover span {
+  background: white;
+}
+
+/* line 198, ../sass/sidebar.scss */
+.sidebar-agent {
+  height: 14px;
+  top: 35%;
+}
+
+/* line 203, ../sass/sidebar.scss */
+.sidebar-appearence {
+  height: 16px;
+  top: 35%;
+}
+
+/* line 208, ../sass/sidebar.scss */
+.sidebar-billboard {
+  height: 21px;
+  top: 30%;
+}
+
+/* line 213, ../sass/sidebar.scss */
+.sidebar-filming {
+  height: 26px;
+  top: 25%;
+}
+
+/* line 218, ../sass/sidebar.scss */
+.sidebar-new-user {
+  top: 28%;
+  height: 25px;
+}
+
+/* line 223, ../sass/sidebar.scss */
+.sidebar-talent {
+  height: 22px;
+  top: 32%;
+}
+
+/* line 184, index/*.png */
+.index-sprite, .index-Phone-1, .index-Phone-2, .index-Phone, .index-Picture-1, .index-Picture-2, .index-Picture, .index-Profile-1, .index-Profile-2, .index-Profile, .index-Star-1, .index-Star-2, .index-Star, .index-agent-1, .index-agent-2, .index-agent, .index-video-1, .index-video-2, .index-video {
+  background-image: url('../img/index-s8a244b6e1f.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Phone-1 {
+  background-position: 0 -21px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Phone-2 {
+  background-position: 0 -42px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Phone {
+  background-position: 0 0;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Picture-1 {
+  background-position: 0 -81px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Picture-2 {
+  background-position: 0 -99px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Picture {
+  background-position: 0 -63px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Profile-1 {
+  background-position: 0 -142px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Profile-2 {
+  background-position: 0 -167px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Profile {
+  background-position: 0 -117px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Star-1 {
+  background-position: 0 -216px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Star-2 {
+  background-position: 0 -240px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-Star {
+  background-position: 0 -192px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-agent-1 {
+  background-position: 0 -278px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-agent-2 {
+  background-position: 0 -292px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-agent {
+  background-position: 0 -264px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-video-1 {
+  background-position: 0 -321px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-video-2 {
+  background-position: 0 -336px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+.index-video {
+  background-position: 0 -306px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 235, ../sass/sidebar.scss */
+.index-Phone {
+  top: 31%;
+  height: 21px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 241, ../sass/sidebar.scss */
+.index-Picture {
+  top: 36%;
+  height: 18px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 247, ../sass/sidebar.scss */
+.index-Profile {
+  top: 29%;
+  height: 25px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 253, ../sass/sidebar.scss */
+.index-Star {
+  top: 28%;
+  height: 23px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 259, ../sass/sidebar.scss */
+.index-agent {
+  top: 35%;
+  height: 14px;
+}
+
+/* line 84, G:\Ruby200\lib\ruby\gems\2.0.0\gems\compass-core-1.0.0\stylesheets\compass\utilities\sprites\_base.scss */
+/* line 265, ../sass/sidebar.scss */
+.index-video {
+  top: 40%;
+  height: 15px;
+}
+
+/* line 273, ../sass/sidebar.scss */
+.view-resume {
+  height: 100px;
+  width: 227px;
+  box-sizing: border-box;
+  padding: 25px 0;
+}
+/* line 280, ../sass/sidebar.scss */
+.view-resume div {
+  border-radius: 3px;
+  box-shadow: 1px 1.732px 0px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 50px;
+  background: #42b0d8;
+}
+
+/* line 298, ../sass/sidebar.scss */
+.join {
+  background-color: #42b0d8;
+  width: 227px;
+  height: 155px;
+}
+/* line 304, ../sass/sidebar.scss */
+.join-btn {
+  background-color: #ec6333;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+  width: 130px;
+  height: 40px;
+}
+
+/* line 317, ../sass/sidebar.scss */
+.profile, .billboard, .notification {
+  width: 73.03922%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0.98039%;
+  clear: none;
+  background: red;
+  overflow: hidden;
+  height: 279px;
+  background: url("../img/bg.png");
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+/* line 332, ../sass/sidebar.scss */
+.billboard {
+  background: red;
+}
+
+/* line 337, ../sass/sidebar.scss */
+.notification {
+  background: red;
+}

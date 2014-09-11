@@ -1,0 +1,237 @@
+/* line 3, ../sass/var/reset/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* line 8, ../sass/var/reset/_reset.scss */
+a {
+  display: block;
+}
+
+/* line 11, ../sass/var/reset/_reset.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 31, ../sass/test.scss */
+header {
+  background: green;
+  height: 60px;
+  width: 100%;
+}
+
+/* line 40, ../sass/test.scss */
+nav {
+  background: #666;
+}
+
+/* line 46, ../sass/test.scss */
+footer {
+  background: purple;
+  width: 100%;
+  height: 60px;
+}
+
+/* line 62, ../sass/test.scss */
+.part1 {
+  background: rgba(108, 158, 251, 0.7);
+  color: #1a1a1a;
+}
+
+/* line 62, ../sass/test.scss */
+.part2 {
+  background: rgba(58, 125, 250, 0.7);
+  color: #1a1a1a;
+}
+
+/* line 62, ../sass/test.scss */
+.part3 {
+  background: rgba(9, 92, 248, 0.7);
+  color: #1a1a1a;
+}
+
+/* line 62, ../sass/test.scss */
+.part4 {
+  background: rgba(5, 74, 201, 0.7);
+  color: #b3b3b3;
+}
+
+/* line 62, ../sass/test.scss */
+.part5 {
+  background: rgba(4, 55, 151, 0.7);
+  color: #b3b3b3;
+}
+
+/* line 62, ../sass/test.scss */
+.part6 {
+  background: rgba(3, 37, 101, 0.7);
+  color: #b3b3b3;
+}
+
+/* line 145, ../sass/test.scss */
+.container {
+  background-image: linear-gradient(to right, #dd8e56, #dd8e56 0.83333%, chocolate 0.83333%, chocolate 7.5%, #dd8e56 7.5%, #dd8e56 9.16667%, chocolate 9.16667%, chocolate 15.83333%, #dd8e56 15.83333%, #dd8e56 17.5%, chocolate 17.5%, chocolate 24.16667%, #dd8e56 24.16667%, #dd8e56 25.83333%, chocolate 25.83333%, chocolate 32.5%, #dd8e56 32.5%, #dd8e56 34.16667%, chocolate 34.16667%, chocolate 40.83333%, #dd8e56 40.83333%, #dd8e56 42.5%, chocolate 42.5%, chocolate 49.16667%, #dd8e56 49.16667%, #dd8e56 50.83333%, chocolate 50.83333%, chocolate 57.5%, #dd8e56 57.5%, #dd8e56 59.16667%, chocolate 59.16667%, chocolate 65.83333%, #dd8e56 65.83333%, #dd8e56 67.5%, chocolate 67.5%, chocolate 74.16667%, #dd8e56 74.16667%, #dd8e56 75.83333%, chocolate 75.83333%, chocolate 82.5%, #dd8e56 82.5%, #dd8e56 84.16667%, chocolate 84.16667%, chocolate 90.83333%, #dd8e56 90.83333%, #dd8e56 92.5%, chocolate 92.5%, chocolate 99.16667%, #dd8e56 99.16667%, #dd8e56 100.0%);
+}
+@media (min-width: 650px) {
+  /* line 145, ../sass/test.scss */
+  .container {
+    background-image: linear-gradient(to right, #dd8e56, #dd8e56 3.33333%, chocolate 3.33333%, chocolate 30%, #dd8e56 30%, #dd8e56 36.66667%, chocolate 36.66667%, chocolate 63.33333%, #dd8e56 63.33333%, #dd8e56 70%, chocolate 70%, chocolate 96.66667%, #dd8e56 96.66667%, #dd8e56 100%);
+  }
+}
+@media (min-width: 1024px) {
+  /* line 145, ../sass/test.scss */
+  .container {
+    background-image: linear-gradient(to right, #dd8e56, #dd8e56 1.66667%, chocolate 1.66667%, chocolate 15%, #dd8e56 15%, #dd8e56 18.33333%, chocolate 18.33333%, chocolate 31.66667%, #dd8e56 31.66667%, #dd8e56 35%, chocolate 35%, chocolate 48.33333%, #dd8e56 48.33333%, #dd8e56 51.66667%, chocolate 51.66667%, chocolate 65%, #dd8e56 65%, #dd8e56 68.33333%, chocolate 68.33333%, chocolate 81.66667%, #dd8e56 81.66667%, #dd8e56 85.0%, chocolate 85.0%, chocolate 98.33333%, #dd8e56 98.33333%, #dd8e56 100.0%);
+  }
+}
+
+/* line 150, ../sass/test.scss */
+.part1 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 150, ../sass/test.scss */
+.part2 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 150, ../sass/test.scss */
+.part3 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 150, ../sass/test.scss */
+.part4 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 150, ../sass/test.scss */
+.part5 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 150, ../sass/test.scss */
+.part6 {
+  margin-bottom: 1.04167%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: 650px) {
+  /* line 162, ../sass/test.scss */
+  .contentbox:nth-of-type(3n + 1) {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 3, "gutter": 0.25, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 26.66667%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 3.33333%;
+    clear: none;
+    clear: both;
+  }
+  /* line 162, ../sass/test.scss */
+  .contentbox:nth-of-type(3n + 2) {
+    -sgs-span-settings: ("span": 1, "location": 2, "grid": 3, "gutter": 0.25, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 26.66667%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 36.66667%;
+    clear: none;
+  }
+  /* line 162, ../sass/test.scss */
+  .contentbox:nth-of-type(3n + 3) {
+    -sgs-span-settings: ("span": 1, "location": 3, "grid": 3, "gutter": 0.25, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 26.66667%;
+    float: right;
+    margin-left: 0;
+    margin-right: 3.33333%;
+    clear: none;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 6, "gutter": 0.25, "style": "split", "start row": true, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 1.66667%;
+    clear: none;
+  }
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 2, "grid": 6, "gutter": 0.25, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 18.33333%;
+    clear: none;
+  }
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 3, "grid": 6, "gutter": 0.25, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 35%;
+    clear: none;
+  }
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 4, "grid": 6, "gutter": 0.25, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.66667%;
+    clear: none;
+  }
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 5, "grid": 6, "gutter": 0.25, "style": "split", "start row": false, "end row": false, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 68.33333%;
+    clear: none;
+  }
+  /* line 176, ../sass/test.scss */
+  .contentbox:nth-of-type(n) {
+    -sgs-span-settings: ("span": 1, "location": 6, "grid": 6, "gutter": 0.25, "style": "split", "start row": false, "end row": true, "fixed gutter": false, "split gutter": 1, "gutter property": "margin", "options": ((null: null)));
+    width: 13.33333%;
+    float: right;
+    margin-left: 0;
+    margin-right: 1.66667%;
+    clear: none;
+  }
+}
+/* line 189, ../sass/test.scss */
+.nav {
+  bacground: red;
+}
+/* line 192, ../sass/test.scss */
+.nav_items {
+  bacground: green;
+}
+
+/* line 206, ../sass/test.scss */
+body {
+  background: white;
+}

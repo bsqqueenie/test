@@ -1,0 +1,248 @@
+/* ----Defined mixin---- */
+/* -------Reset the page------ */
+/* line 3, ../sass/var/reset/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* line 8, ../sass/var/reset/_reset.scss */
+a {
+  display: block;
+}
+
+/* line 11, ../sass/var/reset/_reset.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 93, ../sass/Ftest-page.scss */
+body, html {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 69, ../sass/Ftest-page.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 72, ../sass/Ftest-page.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 77, ../sass/Ftest-page.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*----- HEADER------ */
+/* line 103, ../sass/Ftest-page.scss */
+header {
+  background: #171744;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+/*----- NAV------ */
+/* line 112, ../sass/Ftest-page.scss */
+nav {
+  overflow: hidden;
+  background: #171744;
+  width: 100%;
+  color: #fff;
+}
+/* line 117, ../sass/Ftest-page.scss */
+nav ul li {
+  float: left;
+  margin-right: 5%;
+  list-style: none;
+}
+/* line 121, ../sass/Ftest-page.scss */
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 25px;
+}
+/* line 127, ../sass/Ftest-page.scss */
+nav ul li a:hover {
+  background: #fff;
+  color: #555555;
+}
+/* line 133, ../sass/Ftest-page.scss */
+nav ul li:first-child {
+  margin-left: 5%;
+}
+
+/*-----Mainbox------ */
+/* line 140, ../sass/Ftest-page.scss */
+.mainbox {
+  overflow: hidden;
+  width: 100%;
+  background: #E2E2E2;
+  padding: 5% 10%;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 148, ../sass/Ftest-page.scss */
+.mainbox .social {
+  background: #02261A;
+}
+/* line 151, ../sass/Ftest-page.scss */
+.mainbox .social li {
+  float: left;
+}
+/* line 153, ../sass/Ftest-page.scss */
+.mainbox .social li a {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+/* line 159, ../sass/Ftest-page.scss */
+.mainbox .circle {
+  height: 100px;
+  width: 100px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid red;
+  background: pink;
+}
+/* line 163, ../sass/Ftest-page.scss */
+.mainbox .triangle {
+  height: 0;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid red;
+}
+/* line 166, ../sass/Ftest-page.scss */
+.mainbox .triangle2 {
+  height: 0;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid red;
+}
+/* line 169, ../sass/Ftest-page.scss */
+.mainbox .triangle3 {
+  height: 0;
+  width: 0;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid red;
+  border-top: 50px solid transparent;
+}
+/* line 172, ../sass/Ftest-page.scss */
+.mainbox .triangle4 {
+  height: 0;
+  width: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid red;
+  border-top: 50px solid transparent;
+}
+/* line 175, ../sass/Ftest-page.scss */
+.mainbox .part1 {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  clear: both;
+}
+
+/*-----Contentbox------ */
+/* line 183, ../sass/Ftest-page.scss */
+.contentbox {
+  overflow: hidden;
+  border: 1px solid #25004A;
+  color: #555555;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* line 190, ../sass/Ftest-page.scss */
+.contentbox a {
+  text-decoration: none;
+  font-style: italic;
+  color: #F10E52;
+}
+/* line 195, ../sass/Ftest-page.scss */
+.contentbox .highlight {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  color: #666;
+  text-align: left;
+  padding: 10px;
+  line-height: 20px;
+}
+/* line 204, ../sass/Ftest-page.scss */
+.contentbox p {
+  padding-top: 10px;
+}
+
+/*-----Set the bg-color of each part------ */
+/* line 224, ../sass/Ftest-page.scss */
+.part1 {
+  background: rgba(37, 199, 245, 0.5);
+}
+/* line 227, ../sass/Ftest-page.scss */
+.part1 h3 {
+  color: black;
+}
+
+/* line 224, ../sass/Ftest-page.scss */
+.part2 {
+  background: rgba(57, 219, 255, 0.5);
+}
+/* line 227, ../sass/Ftest-page.scss */
+.part2 h3 {
+  color: black;
+}
+
+/* line 224, ../sass/Ftest-page.scss */
+.part3 {
+  background: rgba(77, 239, 255, 0.5);
+}
+/* line 227, ../sass/Ftest-page.scss */
+.part3 h3 {
+  color: black;
+}
+
+/* line 224, ../sass/Ftest-page.scss */
+.part4 {
+  background: rgba(97, 255, 255, 0.5);
+}
+/* line 227, ../sass/Ftest-page.scss */
+.part4 h3 {
+  color: black;
+}
+
+/*-----Set the  text-decotation of each part------ */
+/* line 269, ../sass/Ftest-page.scss */
+#footer {
+  height: 100px;
+  width: 100%;
+  background: black;
+}
+
+/* line 279, ../sass/Ftest-page.scss */
+.haha .dada, .hehe .dada {
+  color: red;
+}
+
+/* line 283, ../sass/Ftest-page.scss */
+.haha-dada, .hehe-dada {
+  color: red;
+}
+
+/* line 287, ../sass/Ftest-page.scss */
+.haha.dada, .hehe.dada {
+  color: red;
+}
