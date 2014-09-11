@@ -4,6 +4,7 @@
 @import "breakpoint";
 @import "zen";
 $black:black;
+$fontsize:18px;
 $nav_height:percentage(100px/1080px);
 $nav_height2:percentage(100px/6104px);
 @include add-grid(12);
